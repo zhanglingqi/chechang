@@ -1,0 +1,25 @@
+<view class='top'>
+  <text class='title_1' >{{title}}\n</text>
+  <text class='title_2'>停车费：{{hour}}元/小时\n</text>
+  <text class='title_3'>总车位：{{total}}</text>
+  <text class='title_5'>剩余车位：{{residue}}</text>
+</view>
+<navigator class='banner' url='../number/number' hover-class="none">
+  <text class='iconfont icon-qiche car_1'></text>
+  <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;我的爱车</text>
+  <text decode="{{true}}" space="{{true}}" class='car_2'>&nbsp;&nbsp;&nbsp;最多可以添加3辆</text>
+  <view wx:if="{{ plate.length == 0 }}" class='more'>
+    <text class='iconfont icon-tianjia'></text>
+    <text decode="{{true}}" space="{{true}}" class='more_1'>&nbsp;&nbsp;添加车辆       </text>
+  </view>
+    <view wx:else="{{ plate.length > 0 }}" class='titleN'>
+      <text class=''>{{plate}}</text>
+    </view>
+</navigator >
+    <navigator class='bom' url='../cartM/cartM' hover-class="none">
+        <text class='iconfont icon-jilu'></text>
+        <text class='bom_1' decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;车费记录</text>
+        <text class='bom_2'>{{ number }}</text>
+        <text class='iconfont icon-youjiantou'></text>
+    </navigator>
+

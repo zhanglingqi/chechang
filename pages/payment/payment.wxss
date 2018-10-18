@@ -1,0 +1,166 @@
+/* 字体图标 */
+
+@font-face {
+  font-family: 'iconfont'; /* project id 853337 */
+  src: url('//at.alicdn.com/t/font_853337_ez44jnwnna9.eot');
+  src: url('//at.alicdn.com/t/font_853337_ez44jnwnna9.eot?#iefix') format('embedded-opentype'),
+         url('//at.alicdn.com/t/font_853337_ez44jnwnna9.woff') format('woff'),
+         url('//at.alicdn.com/t/font_853337_ez44jnwnna9.ttf') format('truetype'),
+         url('//at.alicdn.com/t/font_853337_ez44jnwnna9.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youjiantou:before {
+  content: "\e658";
+}
+
+.payment {
+  width: 82%;
+  border: 1px solid #f5f5f5;
+  border-radius: 15rpx;
+  box-shadow: 0px 0px 3px 3px #f5f5f5;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  padding: 34rpx 35rpx 0rpx 35rpx;
+  position: relative;
+}
+
+.payment_1 {
+  font-size: 45rpx;
+  font-weight: 700;
+}
+
+.payment_2 {
+  font-size: 37rpx;
+  color: #a4a4a4;
+}
+
+.payment_3 {
+  font-size: 37rpx;
+}
+
+.payment_6 {
+  color: #a4a4a4;
+}
+
+.payment_7 {
+  position: absolute;
+  right: 35rpx;
+  top: 400rpx;
+  font-size: 45rpx;
+}
+
+.discounts {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 25rpx;
+  padding: 27rpx 9rpx;
+}
+
+.discounts_2 {
+  display: inline-block;
+  right: 43rpx;
+  top: 500rpx;
+  color: #f6ce67;
+  font-size: 35rpx;
+  padding-left: 38%;
+}
+
+.money {
+  border-top: 1px solid #e8e8e8;
+  padding: 25rpx;
+  text-align: right;
+  font-size: 45rpx;
+  font-weight: 700;
+}
+
+.come {
+  background-color: #fcd04e;
+  width: 90%;
+  position: fixed;
+  bottom: 40rpx;
+  margin-left: 5%;
+}
+
+/*使屏幕变暗  */
+
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+/*对话框 */
+
+.commodity_attr_box {
+  /* height: 300rpx; */
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding-top: 20rpx;
+}
+
+.close {
+  background-color: #fcd04e;
+}
+
+.popout_1 {
+  padding-left: 45%;
+  margin-bottom: 20rpx;
+}
+
+#popout_2 {
+  position: absolute;
+  right: 30rpx;
+}
+
+.popout_3 {
+  padding-left: 30rpx;
+}
+
+.popout_4 {
+  border-bottom: 1px solid #ccc;
+  padding: 30rpx 30rpx 0;
+  height: 60rpx;
+}
+.popout_5 {
+  font-size: 35rpx;
+}
+
+radio {
+  width: 38rpx;
+}
+
+radio .wx-radio-input {
+  border-radius: 50%;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  font-size: 55rpx; /* 对勾大小 26rpx */
+  color: #fff; /* 对勾颜色 */
+  background: #fcd04e;
+  border-color: #2facff;
+}

@@ -1,0 +1,21 @@
+<view class="container">
+	 <view class='number'>请输入车牌号码：</view>
+	 <view class="chepai">
+	 		<view class="tel" bindtap="d1">{{carNo}}</view>
+	 </view>
+	 <!-- 省 -->
+	 <view class="provinces" hidden='{{hidden1}}'>
+	 		<view class="pro_li lf" wx:for="{{item1}}" wx:key="{{item1.i}}" bindtap='sheng' data-sh="{{item}}">{{item}}</view>
+			<!-- <view class="pro_del lf" bindtap='null'>清空</view>
+			<view class="pro_close lf" bindtap='d2'>关闭</view>	 -->
+	 </view>
+	 <!-- 号码	 -->
+	 <view class="keyNums" hidden='{{hidden2}}'>
+	 		<view class="pro_li lf" wx:for="{{item2}}" wx:key="{{item2.i}}" bindtap='other' data-ot="{{item}}">{{item}}</view>
+			<view class="bot">
+				<!-- <view class="pro_ok lf" bindtap='ok'>OK</view> -->
+				<view class="pro_d lf" bindtap='del'>(删除)</view>
+			</view>	
+	 </view> 
+   <button class='btn' bindtap='ok'>确   定</button>
+</view>

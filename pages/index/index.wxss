@@ -1,0 +1,132 @@
+/* 字体图标 */
+@font-face {
+  font-family: 'iconfont';  /* project id 853337 */
+  src: url('//at.alicdn.com/t/font_853337_ez44jnwnna9.eot');
+  src: url('//at.alicdn.com/t/font_853337_ez44jnwnna9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_853337_ez44jnwnna9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_853337_ez44jnwnna9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_853337_ez44jnwnna9.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-youjiantou:before { content: "\e658"; }
+
+.icon-tianjia:before { content: "\e60d"; }
+
+.icon-qiche:before { content: "\e603"; }
+
+.icon-jilu:before { content: "\e62f"; }
+/* 字体图标结束 */
+.top {
+  width: 90%;
+  height: 214rpx;
+  border: 1px solid #f5f5f5;
+  border-radius: 15rpx;
+  box-shadow:0px 0px  2px 2px #f5f5f5;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  position: relative;
+}
+.top > text {
+display: block;
+margin: 15rpx 30rpx;
+}
+.title_1,.title_5 {
+  font-size: 40rpx;
+}
+.title_2 {
+  font-size: 33rpx;
+  color: #9a9a9a;
+}
+.title_3 {
+  font-size: 36rpx;
+}
+.title_5 {
+  position: absolute;
+  right: 0;
+  bottom: 0rpx;
+}
+.banner {
+  width: 90%; 
+  border: 1px solid #f5f5f5;
+  border-radius: 15rpx;
+  box-shadow:0px 0px  2px 2px #f5f5f5;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  position: relative;
+}
+.car_1 {
+  padding-left: 30rpx;
+  font-size: 40rpx;
+}
+.icon-qiche {
+  color: #67b99d;
+}
+.car_2 {
+  font-size: 30rpx;
+  color: #bfbfbf;
+}
+.more {
+  display: flex;
+  width: 78%;
+  border-top: 1px solid #f6f6f6;
+  margin-top: 10rpx;
+  justify-content: center;
+  align-items: center;
+  padding: 52rpx;
+  margin-left:2%;
+}
+.titleN {
+  border-top: 1px solid #f6f6f6;
+  margin-top: 10rpx;
+  padding: 52rpx;
+  margin-left:2%;
+  font-size: 50rpx;
+}
+.icon-tianjia {
+  color: #f5d24d;
+  font-size: 50rpx;
+}
+.more_1 {
+  color: #f5d24d;
+}
+.bom {
+  width: 82%; 
+  border: 1px solid #f5f5f5;
+  border-radius: 15rpx;
+  box-shadow:0px 0px  2px 2px #f5f5f5;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  padding: 30rpx;
+  position: relative;
+}
+.icon-jilu {
+  color: #319372;
+  font-size: 50rpx;
+}
+.icon-youjiantou {
+  position: absolute;
+  right: 0;
+  font-size: 45rpx;
+}
+.bom_2 {
+  border-radius: 50%;
+  width: 32rpx;
+  height: 32rpx;
+  font-size: 27rpx;
+  background: #fc6134;
+  color: #fff; 
+  position: absolute;
+  left: 40%;
+  bottom: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

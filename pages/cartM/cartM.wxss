@@ -1,0 +1,52 @@
+.record {
+ width: 80%;
+  height: 214rpx;
+  border: 1px solid #f5f5f5;
+  border-radius: 15rpx;
+  box-shadow:0px 0px  2px 2px #f5f5f5;
+  margin-top: 30rpx;
+  margin-left: 5.5%;
+  padding: 30rpx 38rpx 39rpx 27rpx;
+  position: relative;
+}
+.record text {
+  display: block;
+}
+.record_1 {
+  font-weight: 700;
+  font-size: 45rpx;
+}
+.record_2 {
+  position: absolute;
+  top: 30rpx;
+  right: 39rpx;
+  font-size: 35rpx;
+}
+.record_3 {
+  position: absolute;
+  top: 130rpx;
+  left: 27rpx;
+  color: #9c9c9c;
+  font-size: 35rpx;
+}
+.record_4 {
+  position: absolute;
+  top: 120rpx;
+  right: 39rpx;
+  font-size: 45rpx;
+  color: #dc6d48;
+}
+.record_5 {
+  position: absolute;
+  bottom: 39rpx;
+  left: 27rpx;
+}
+.record_6 {
+  position: absolute;
+  bottom: 39rpx;
+  right: 39rpx;
+  font-size: 45rpx;
+  font-weight: 700;
+}
+
+

@@ -1,0 +1,42 @@
+<view class='payment'>
+    <text class='payment_1'>京N·DW345\n\n</text>
+    <text class='payment_2'>2018.09.13</text>
+    <text class='payment_3' decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;16:00:00-19:36:00\n\n</text>
+    <text class='payment_4'>3小时36分钟</text>
+    <text class='payment_5' decode="{{true}}" space="{{true}}">&nbsp;&nbsp;(第一小时免费)\n\n</text>
+    <text class='payment_6'>停车费：2元/小时\n\n</text>
+    <text class='payment_7'>6.00元</text>
+    <view class='discounts' bindtap="clickme">
+      <text class='discounts_1'>优惠卷</text>
+        <view class='discounts_2'>
+            <text decode="{{true}}" space="{{true}}">{{ coupon }}&nbsp;&nbsp;</text>
+            <text class='iconfont icon-youjiantou'></text>
+        </view>
+    </view>
+    <view class='money'>
+      <text>6.00元</text>
+    </view>
+</view>
+<view>
+  <button bindtap='onTapDayWeather' class='come' loading="{{loading}}">支   付</button>
+</view>
+<!--屏幕背景变暗的背景  -->
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!--弹出框  -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+      <radio-group bindchange="radioChange">
+          <view>
+            <text class='popout_1'>优惠卷\n</text>
+              <view class='popout_5'>
+                  <label wx:for="{{items}}" wx:key="{{item.value}}">
+                  <view class='popout_4'>
+                      <radio value="{{item.value}}" id='popout_2'  checked="{{item.checked}}" ></radio>
+                      <text class='popout_3'>{{item.name}}</text>
+                  </view> 
+              </label>
+              </view>
+            </view>   
+      </radio-group>
+    <button class='close' bindtap="hideModal">关  闭</button>
+  </view>
+

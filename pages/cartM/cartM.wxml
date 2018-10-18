@@ -1,0 +1,28 @@
+<navigator class='record' url='../payment/payment' hover-class="none">
+    <view>
+        <text class='record_1'>京N·DW345</text>
+        <text class='record_2'>2小时36分</text>
+        <text class='record_3'>2018.09.13</text>
+        <text class='record_4'>去支付</text>
+        <text class='record_5'>16:00:00-18:36:00</text>
+        <text class='record_6'>6.00元</text>
+    </view>
+</navigator>
+<navigator class='record' url='../payment/payment' hover-class="none">
+    <view>
+        <text class='record_1'>京N·DW345</text>
+        <text class='record_2'>2小时36分\n\n</text>
+        <text class='record_3'>2018.09.13</text>
+        <text class='record_5'>16:00:00-18:36:00</text>
+        <text class='record_6'>6.00元</text>
+    </view>
+</navigator>
+<navigator class='record' url='../payment/payment' hover-class="none">
+    <view>
+        <text class='record_1'>京N·DW345</text>
+        <text class='record_2'>2小时36分\n\n</text>
+        <text class='record_3'>2018.09.13</text>
+        <text class='record_5'>16:00:00-18:36:00</text>
+        <text class='record_6'>6.00元</text>
+    </view>
+</navigator>
