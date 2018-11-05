@@ -70,22 +70,34 @@ Page({
                             key: 'openid',
                             success: function (res) {
                               //取到openid后发送请求到后台换取需要的数据
+                              console.log(res.data)
                               wx.request({
-                                url: '',//后台给我的数据
+                                url: 'https://rd.ghsapi.guangheplus.com/spPay/payFee',//后台给我的数据
+                                header: {
+                                  'content-type': 'application/x-www-form-urlencoded',
+                                  'Authorization': 'Bearer ' + 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI2MjM2NiIsInVzZXJOYW1lIjoi55So5oi3MTc1NzU3IiwiaWF0IjoxNTM5MzI2MDQ2LCJleHAiOjE1NDE5MTgwNDZ9.9_KkPLVQ7SXLRS6Kb3wps9UKy_8RRd5cM6FbuQufuKM'
+                                },
                                 data: {
-                                  openid : res.data
+                                  openId : res.data,
+                                  ip:'192.168.1.179',
+                                  feeType: 'car',
+                                  payMoney:0.01
                                 },
                                 method: 'POST',
                                 //请求发送成功后的数据
                                 success(resS) {
-                                  console.log(resS);
-                                  const payargs = resS.data.payargs;
+                                  // console.log(resS)
+                                  const payargs = resS.data.data;
+                                  console.log(payargs);
                                   wx.requestPayment({
                                     timeStamp: payargs.timeStamp,
                                     nonceStr: payargs.nonceStr,
                                     package: payargs.package,
                                     signType: payargs.signType,
                                     paySign: payargs.paySign
+                                  });
+                                  wx.navigateTo({
+                                    url: '/pages/index/index',
                                   })
                                   that.setData({
                                     loading:false
@@ -140,9 +152,7 @@ Page({
        }
      })
     
-    // wx.navigateTo({
-    //   url: '/pages/index/index',
-    // })
+   
   },
   //点击我显示底部弹出框
   clickme: function () {

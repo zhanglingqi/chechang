@@ -6,8 +6,6 @@
 	 <!-- 省 -->
 	 <view class="provinces" hidden='{{hidden1}}'>
 	 		<view class="pro_li lf" wx:for="{{item1}}" wx:key="{{item1.i}}" bindtap='sheng' data-sh="{{item}}">{{item}}</view>
-			<!-- <view class="pro_del lf" bindtap='null'>清空</view>
-			<view class="pro_close lf" bindtap='d2'>关闭</view>	 -->
 	 </view>
 	 <!-- 号码	 -->
 	 <view class="keyNums" hidden='{{hidden2}}'>
