@@ -61,12 +61,7 @@ Page({
       var carNo = that.data.carNo + e.currentTarget.dataset.ot;
     }
     if (that.data.carNo.length >= 9) {
-      wx.showToast({
-        title: '车牌输入有误',
-        icon: 'none',
-        duration: 1000,
-        mask: true
-      });
+     return false;
     } 
     that.setData({
       carNo: carNo
@@ -110,8 +105,11 @@ Page({
         mask: true
       });
       setTimeout(function() {
-        wx.navigateTo({
-          url: '/pages/index/index',
+        // wx.navigateTo({
+        //   url: '/pages/index/index',
+        // })
+        wx.navigateBack({
+          delta: 1
         })
       },2000)
     }else {

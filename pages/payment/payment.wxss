@@ -52,7 +52,7 @@
 
 .payment_7 {
   position: absolute;
-  right: 35rpx;
+  right: 58rpx;
   top: 400rpx;
   font-size: 45rpx;
 }
@@ -64,9 +64,7 @@
 }
 
 .discounts_2 {
-  display: inline-block;
-  right: 43rpx;
-  top: 500rpx;
+  float: right;
   color: #f6ce67;
   font-size: 35rpx;
   padding-left: 38%;

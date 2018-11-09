@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.2.4",
+	"libVersion": "2.4.0",
 	"appid": "wx8af403e54636eeac",
 	"projectname": "management",
 	"isGameTourist": false,
@@ -33,8 +33,22 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "支付页面",
+					"pathName": "pages/payment/payment",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "dentistId=2",
+					"scene": "1048"
+				}
+			]
 		}
 	}
 }

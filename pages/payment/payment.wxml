@@ -5,7 +5,7 @@
     <text class='payment_4'>3小时36分钟</text>
     <text class='payment_5' decode="{{true}}" space="{{true}}">&nbsp;&nbsp;(第一小时免费)\n\n</text>
     <text class='payment_6'>停车费：2元/小时\n\n</text>
-    <text class='payment_7'>6.00元</text>
+    <text class='payment_7'>{{ moneyStart }}.00元</text>
     <view class='discounts' bindtap="clickme">
       <text class='discounts_1'>优惠卷</text>
         <view class='discounts_2'>
@@ -14,7 +14,7 @@
         </view>
     </view>
     <view class='money'>
-      <text>6.00元</text>
+      <text>{{moneyEnd}}.00元</text>
     </view>
 </view>
 <view>

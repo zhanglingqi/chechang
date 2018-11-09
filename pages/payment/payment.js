@@ -13,7 +13,9 @@ Page({
       { value: '不使用优惠券', name: '不使用优惠券',checked: 'true' },
     ],
     //优惠券信息
-    coupon:'不使用优惠券'
+    coupon:"不使用优惠券",
+    moneyStart:6,
+    moneyEnd:0
   },
   onTapDayWeather() {
     const that = this
@@ -81,7 +83,7 @@ Page({
                                   openId : res.data,
                                   ip:'192.168.1.179',
                                   feeType: 'car',
-                                  payMoney:0.01
+                                  payMoney:0.0001
                                 },
                                 method: 'POST',
                                 //请求发送成功后的数据
@@ -96,8 +98,11 @@ Page({
                                     signType: payargs.signType,
                                     paySign: payargs.paySign
                                   });
-                                  wx.navigateTo({
-                                    url: '/pages/index/index',
+                                  // wx.redirectTo({
+                                  //   url: '/pages/index/index',
+                                  // })
+                                  wx.navigateBack({
+                                    delta: 2
                                   })
                                   that.setData({
                                     loading:false
@@ -145,9 +150,6 @@ Page({
            that.setData({
              loading: false
            });
-           wx.redirectTo({
-             url: '/pages/index/index',
-           })
          }
        }
      })
@@ -162,14 +164,23 @@ Page({
   radioChange(e) {
     var that = this;
     console.log('radio发生change事件，携带value值为：', e.detail.value)
-    console.log(e)
     that.setData({
       coupon : e.detail.value
+    });
+    // 修改最后的钱
+    var couponNum = that.data.coupon;
+    var couponMoney = couponNum.substring(0, 1);
+    that.setData({
+      moneyEnd: that.data.moneyStart - couponMoney
     })
-    const items = this.data.items
+    if (e.detail.value == '不使用优惠券') {
+      that.setData({
+        moneyEnd: that.data.moneyStart
+      })
+    }
+    const items = that.data.items;
     for (let i = 0, len = items.length; i < len; ++i) {
       items[i].checked = items[i].value === e.detail.value
-      // console.log(items[i].checked + items[i].value + e.detail.value)
     }
     
     this.setData({
@@ -232,7 +243,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    this.setData({
+      moneyEnd: this.data.moneyStart
+    })
   },
 
   /**
